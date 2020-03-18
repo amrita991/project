@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<title> Drop-down menu design</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*
+ {
+ margin:0px;
+ padding:0px;
+ box-sizing: border-box;
+ }
+html
+{
+    background: url('Mount-Kailash333.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+	margin-left:190px;
+	margin-right:190px;
+}
+.navbar
+{
+background: rgb(0,100,0);
+text-align: center;
+}
+.navbar ul{
+display: inline-flex;
+list-style: none;
+color: #fff;
+}
+.navbar ul li{
+width: 140px;
+margin: 15px;
+padding: 15px;
+font-family:'Arial';
+font-size: 18px;
+}
+.navbar ul li a
+{
+ text-decoration: none;
+ color: #fff;
+ }
+
+.active, .navbar ul li:hover
+{
+ background: #2bab0d;
+ border-radious: 3px;
+}
+.navbar .fa
+{
+margin-right: 8px;
+}
+.sub-menu-1
+{
+ display: none;
+}
+.navbar ul li:hover .sub-menu-1
+{
+   display: block;
+   position: absolute;
+   background: rgb(0,100,0);
+   margin-top: 15px;
+   margin-left: -15px;
+}
+.navbar ul li:hover .sub-menu-1 ul
+{
+ display: block;
+ margin: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li
+{
+   width: 150px;
+   padding: 10px;
+   border-bottom: 1px dotted #fff;
+   background: transparent;
+   border-radious: 0;
+   text-align: left;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li: last-child
+{
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-menu-1 ul li a:hover
+{
+  color: #b2ff00;
+}
+.fa-angle-right
+{
+ float:right;
+}
+.sub-menu-2
+{
+display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background-color: rgb(0,100,0);
+}
+
+</style>
+ </head>
+<body>
+<div class="navbar">
+<ul>
+<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-user"></i>About Us</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="#">Mission</a></li>
+<li><a href="#"> Vision</a></li>
+<li><a href="#">Team</a></li>
+</ul>
+</div>
+</li>
+ <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+ 
+<div class="sub-menu-1">
+<ul>
+<li><a href="#">Web Designing</a></li>
+<li class="hover-me"><a href="#"> Marketing</a><i class="fa fa-angle-right"></i>
+<div class="sub-menu-2">
+<ul>
+<li><a href="#">SEO</a></li>
+<li><a href="#"> Social Media</a></li>
+<li><a href="#">Email Marketing</a></li>
+</ul>
+
+</div>
+</li>
+<li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+<div class="sub-menu-2">
+<ul>
+<li><a href="#">Android App</a></li>
+<li><a href="#"> IOS App</a></li>
+<li><a href="#">Iconic App</a></li>
+<li><a href="#">Fluter App</a></li>
+<li><a href="#">Unity App</a></li>
+
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+ 
+<li><a href="#"><i class="fa fa-rss"></i>Blog</a></li>
+
+<li><a href="#"><i class="fa fa-phone"></i>Contacts</a></li>
+</ul>
+</div>
+</body>
+</html>
